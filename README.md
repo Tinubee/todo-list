@@ -1,14 +1,5 @@
-# React Masterclass
+## To Do List
 
-Learn and dominate the React ecosystem once and for all.
+- Using Styled Components,Recoil,React Query,React Router DOM,Typescript
 
-### Using:
-
-- Styled Components
-- Recoil
-- React Query
-- React Router DOM
-- Apex Charts
-- React Spring
-- Typescript
-- Firebase
+✔️ Link : https://nomadcoders.co/react-masterclass
