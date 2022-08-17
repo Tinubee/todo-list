@@ -31,16 +31,13 @@ const ToDoList = styled.div`
 function ToDo({ text, category, id }: IToDo) {
   const setToDos = useSetRecoilState(toDoState);
   const onClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    const {
-      currentTarget: { name },
-    } = event;
-    console.log(name);
+    console.log(event);
     setToDos((oldToDos) => {
       const targetIndex = oldToDos.findIndex((toDo) => toDo.id === id);
       const newToDo = {
         text,
         id,
-        category: name as any,
+        category: event as any,
       };
 
       return [
@@ -67,6 +64,7 @@ function ToDo({ text, category, id }: IToDo) {
               <Button
                 key={categoryItem}
                 delete={false}
+                name={categoryItem}
                 onClick={() => onClick(categoryItem)}
               >
                 {categoryItem}
