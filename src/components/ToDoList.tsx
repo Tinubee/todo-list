@@ -11,7 +11,7 @@ import ToDo from "./ToDo";
 const Container = styled.div`
   padding: 0 20px;
   max-width: 420px;
-  margin: 30% auto;
+  margin: 50px auto;
   border: 1px solid white;
   height: 70vh;
   border-radius: 10px;
